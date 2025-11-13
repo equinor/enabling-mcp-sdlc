@@ -9,7 +9,7 @@ handoffs:
     prompt: Start implementation
   - label: Create Issue & Start Implementation
     agent: agent
-    prompt: Create a GitHub issue for traceability of this plan with title, body containing the full plan content, and labels for agent and model tags. Automatically detect and include the current agent name, the LLM model currently executing this plan, and the current agent mode as labels. Then ask the user if they want a local or remote branch and create it before starting implementation.
+    prompt: Create a GitHub issue for traceability of this plan with title, body containing the full plan content, and labels for agent and model tags. Automatically detect and include the current agent name, the LLM model currently executing this plan, and the current agent mode as labels. Then ask the user if they want a local or remote branch and create it before starting implementation. Once you ask and confirm that you want to do a commit, follow the copilot-commit-message file in the .vscode folder.
     send: true
   - label: Open in Editor
     agent: agent
